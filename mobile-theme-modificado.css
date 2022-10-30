@@ -560,29 +560,34 @@ body, select {
     float: left;
     border-radius: $iluria.layout.search.box.border.radius;
     padding: 0px 6px 1px 6px;
-    background-color: #151515; /* para navegadores que não suportam rgba */
+    background-color: #ffd0d0; /* para navegadores que não suportam rgba */
     border-color: #e7eaec; /* para navegadores que não suportam rgba */
     border-color: $iluria.layout.search.box.border.color;
     border-width: $iluria.layout.search.box.border.width;
     border-style: $iluria.layout.search.box.border.style;
-    color: black;
+    color: white;
 }
 
 .m-search-bar input {
-    background-color: #151515;
+    background-color: #ffd0d0;
     border: none;
     width: 200px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #522427;
+}
+
+.m-search-bar input::placeholder {
+    color: #522427;
 }
 
 .m-search-bar a, .iluria-layout-search-bar a:hover {
     text-decoration: none;
     font-family: ModernPictogramsNormal;
     font-size: 25px;
+    color: #522427 !important;
 }
 
 .m-search-bar-button {
-    color: rgba(255, 255, 255, 0.8);
+    color: #522427;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -786,6 +791,7 @@ body, select {
 
 /* cor do texto do menu lateral */
 .mm-list > li > a, .mm-list > li > span {
+    font-size: 24px !important;
     color: rgba(255, 255, 255, 0.8);
 }
 
